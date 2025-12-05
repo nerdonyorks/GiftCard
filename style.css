@@ -34,7 +34,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../image/background.jpg");
+  background: url("./image/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
