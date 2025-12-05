@@ -5,7 +5,7 @@
   <title>Gift Card</title>
   <link rel="icon" type="image/png" href="./image/logo.png">
   <link rel="stylesheet" href="./style.css">
-  <link rel="preload" as="image" href="./image/background.jpg">
+  <!-- <link rel="preload" as="image" href="./image/background.jpg"> -->
 
 
 </head>
@@ -13,46 +13,79 @@
 <!-- partial:index.partial.html -->
 <div id="canvas-container"></div>
 <div class="wrapper">
-  <div class="card">
+  <div class="gift-box-container">
+    <p class="tap-to-open">Tap to Open</p>
+    <div class="gift-box" id="giftBox">
+      <div class="gift-box-lid"></div>
+      <div class="gift-box-body">
+        <div class="ribbon-vertical"></div>
+        <div class="ribbon-horizontal"></div>
+        <div class="bow-left"></div>
+        <div class="bow-right"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card" style="display: none;">
     <p class="text-intro"></p>
     <div class="card-content">
       <!-- <div class="heart"></div> -->
       <div class="valentine-text" style="display: none">
-        <h1>So…did you like it ?</h1>
-        <img src="image/imgi_4_spongebob-confused.gif" alt="please" class="please" />
+        <h1>“Speech Review Time: Yay or Nay?”</h1>
       </div>
       <div class="buttons" style="display: none">
-        <button class="yes">Yes</button>
-        <button class="no">No</button>
+        <button class="yes">
+          <span class="button-text">Yes</span>
+          <span class="button-icon">✓</span>
+        </button>
+        <button class="no">
+          <span class="button-text">No</span>
+          <span class="button-icon">✗</span>
+        </button>
       </div>
       <div class="valentine-congrats" style="display: none">
-        <h1>We appreciate your response.</h1>
-        <h3>“Thank You for Rating BCR313!”</h3>
-        <img src="image/Animated-Thank-You-Gif-Slides.gif" alt="congrats" class="congrats" />
+        <div class="congrats-background">
+          <div class="floating-heart">❤️</div>
+          <div class="floating-heart">🎄</div>
+          <div class="floating-heart">✨</div>
+          <div class="floating-heart">⭐</div>
+          <div class="floating-heart">💫</div>
+          <div class="floating-heart">🌟</div>
+          <div class="floating-heart">🎅</div>
+          <div class="floating-heart">☃️</div>
+          <div class="floating-heart">❄️</div>
+          <div class="floating-heart">🔔</div>
+          <div class="floating-heart">🦌</div>
+          <div class="floating-heart">🎁</div>
+          <div class="floating-heart">🎉</div>
+          <div class="floating-heart">🎊</div>
+          <div class="floating-heart">🍪</div>
+          <div class="floating-heart">🥛</div>
+          <div class="floating-heart">🕯️</div>
+          <div class="floating-heart">🧦</div>
+          <div class="floating-heart">🎀</div>
+          <div class="floating-heart">🎈</div>
+          <div class="floating-heart">💝</div>
+          <div class="floating-heart">🌲</div>
+          <div class="floating-heart">⛄</div>
+          <div class="floating-heart">🎵</div>
+          <div class="floating-heart">🎶</div>
+        </div>
+        <div class="congrats-content">
+          <h1 class="congrats-title">Yes ? Awesome !</h1>
+          <p class="congrats-message">We, the BCR313 batch, put our heart into hosting this session.</p>
+          <p class="congrats-wish">Wishing you a joyful Christmas! 🎄❤️</p>
+        </div>
       </div>
       <div class="valentine-sad" style="display: none">
-        <h1>Whyyyyyyy!!!!!</h1>
-        <p>Life already has enough lemons.</p>
-        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTF4aHN4Y2FqMnlvdGRwYnF6ZG5nZ2l3emRxeXNvcXlyemZkbDJjYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kyrd72DC2Iwfu/giphy.gif" alt="sad" class="sad" />
+        <h1>💔 "I wasn't ready for this level of heartbreak…"</h1>
       </div>
-    </div>
-    <div class="cord-wrapper">
-      <svg width="40" height="200" class="cord">
-        <path class="cord-path" d="M20,0 C20,50 20,150 20,200" />
-      </svg>
-      <svg class="plug" y="140" viewBox="0 0 100 160">
-        <path d="M30,0 L70,0 L90,40 L90,140 L10,140 L10,40 Z" />
-        <circle cx="35" cy="20" r="5" fill="white" />
-        <circle cx="65" cy="20" r="5" fill="white" />
-      </svg>
-      <div class="ribbon"></div>
     </div>
   </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <!-- partial -->
   <script  src="./script.js"></script>
 
