@@ -17,3 +17,6 @@ Because this is a static webpage, you can open it directly in a browser.
 1. Clone or download the repo  
    ```bash
    git clone https://github.com/nerdonyorks/GiftCard.git
+
+![GiftCard Preview](preview.png)
+
